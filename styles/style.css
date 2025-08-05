@@ -66,7 +66,7 @@ ol {
 }
 
 .title {
-  padding: 11px 140px 19px 0;
+  padding: 16px 140px 19px 0;
   font-family: 'Oswald' , sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -118,7 +118,6 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
-  padding-top: 1px;
 }
 
 .content__video-card-description-container {
@@ -146,7 +145,7 @@ ol {
   overflow: hidden;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 20px;
   padding-left: 2px;
 }
 
@@ -156,7 +155,49 @@ ol {
   line-height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+}
+
+.search-form__textfield {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  border-top: 1px solid currentColor;
+  border-right: none;
+  border-bottom: 1px solid currentColor;
+  border-left: none;
+  color: currentColor;
+  background-color: transparent;
+  appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
