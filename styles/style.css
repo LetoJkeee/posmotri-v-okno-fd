@@ -44,7 +44,7 @@ ol {
   display: flex;
   align-items: end;
   width: 1140px;
-  column-gap: 29px;
+  column-gap: 30px;
   margin: 133px 30px;
 }
 
@@ -52,6 +52,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  column-gap: 40px;
 }
 
 .content__details{
@@ -65,7 +66,7 @@ ol {
 }
 
 .title {
-  padding: 12px 140px 20px 0;
+  padding: 0 140px 19px 0;
   font-family: 'Oswald' , sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -113,9 +114,15 @@ ol {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;g
+  overflow: hidden;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 16px;
+  padding-left: 3px;
+  padding-top: 1px;
 }
 
 .content__video-card-thumbnail {
@@ -144,21 +151,21 @@ ol {
   padding-left: 3px;
 }
 
-.content__video-card-description {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 16.2px;
-  padding-left: 2px;
-}
 
-.search-form__fieldset-title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
+
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 
