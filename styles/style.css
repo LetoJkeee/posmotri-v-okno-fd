@@ -185,14 +185,32 @@ input {
   row-gap: 30px;
 }
 
+.content__list-item {
+  display: flex;
+}
+
 .content__card-link {
   text-decoration: none;
   color: currentColor;
 }
 
+.content__card-link_current {
+  background-color: transparent;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
+}
+
 .content__video-card {
   display: flex;
   align-items: start;
+}
+
+.content__card-link:hover {
+  text-decoration: 1px underline;
+  text-underline-offset: 1px;
+  cursor: pointer
 }
 
 .content__video-card-description-container {
@@ -231,7 +249,7 @@ input {
   padding-left: 2px;
 }
 
-/* button styles*/
+              /* button styles*/
 .button {
   font-family: 'Fira Sans Condensed' , sans-serif;
   font-weight: 700;
@@ -248,12 +266,34 @@ input {
   width: 194px;
   height: 34px;
   margin-top: 17px;
+  align-self: flex-end;
 }
 
 .more-button {
  padding-top: 8px;
  padding-bottom: 8px;
 }
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  border: none;
+}
+
+.button:focus-visible {
+  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
+}
+
 
                /* Скрытие элементов */
 .visually-hidden {
