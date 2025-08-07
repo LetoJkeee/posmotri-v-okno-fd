@@ -45,7 +45,7 @@ ol {
   align-items: end;
   width: 1140px;
   height: 534px;
-  column-gap: 29px;
+  column-gap: 30px;
   margin: 133px 30px;
 }
 
@@ -231,6 +231,29 @@ input {
   padding-left: 2px;
 }
 
+/* button styles*/
+.button {
+  font-family: 'Fira Sans Condensed' , sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: currentColor;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  margin-top: 17px;
+}
+
+.more-button {
+ padding-top: 8px;
+ padding-bottom: 8px;
+}
 
                /* Скрытие элементов */
 .visually-hidden {
