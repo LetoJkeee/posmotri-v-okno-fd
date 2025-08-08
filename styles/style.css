@@ -132,6 +132,9 @@ input {
 }
 
 .search-form__pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid currentColor;
@@ -139,7 +142,6 @@ input {
 }
 
 .search-form__pseudo-checkbox::after {
-  display: block;
   content:'';
   background-color: currentColor;
   width: 100%;
@@ -147,8 +149,9 @@ input {
   opacity: 0;
 }
 
-
-
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
 
               /* content_ditalis section */
 .content__details{
@@ -175,7 +178,7 @@ input {
   row-gap: 30px;
   position: relative;
   max-height: 298px;
-  overflow: auto;
+  overflow-y: auto;
   margin-top: 1px;
 }
 
