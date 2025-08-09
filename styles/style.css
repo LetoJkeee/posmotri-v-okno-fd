@@ -104,6 +104,14 @@ ol {
   outline-offset: 1px;
 }
 
+.search-form__label:active .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.search-form__label:active:hover {
+  text-decoration: none;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -152,14 +160,14 @@ input {
   opacity: 1;
 }
 
-              /* content_ditalis section */
-.content__details{
+              /* content_detalis section */
+.content__details {
   min-width: 339px;
   height: 534px;
 }
 
 .title {
-  padding: 0 140px 19px 0;
+  padding: 0 140px 18px 0;
   font-family: 'Oswald' , sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -200,9 +208,9 @@ input {
   color: currentColor;
 }
 
-.content__card-link:active {
+.content__list-item .content__card-link:active {
   background-color: #545050;
-  text-decoration: none ;/* тут надо доделать, убрать подечеркивание в стостояние актив*/
+  text-decoration: none ;
 }
 
 .content__card-link:focus {
@@ -242,7 +250,7 @@ input {
   object-position: center;
 }
 
-.content__video-card-title  {
+.content__video-card-title {
   font-family: 'Oswald' , sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -311,7 +319,6 @@ input {
   outline: 1px solid currentColor;
   outline-offset: 1px;
 }
-
 
                /* Скрытие элементов */
 .visually-hidden {
